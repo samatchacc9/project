@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    background: #0D6EFD;
+}
+
+.close-icon{
+    padding: 0 5px 0 0;
+    text-align: right;
+    font-size: 22px;
+}
+/* set ขนาด form */
+.form-login{
+    width: 390px;
+    background: #ffffff;
+    border-radius: 5px;
+    /* padding: 50px 0px; */
+}
+/* set ขนาดหัวข้อ */
+.form-login header{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 0 10px ;
+    border-bottom: 1px solid #bfbfbf;
+}
+/* ระยะขอบ form */
+.form-login form{
+    margin: 25px 25px;  
+}
+/* จัดเรียง class คลุม input */
+form .dbl-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* สร้างขอบเขตช่อง input ใหม่ */
+.dbl-field .field{
+    margin: 10px;
+    height: 40px;
+    position: relative;
+    width: calc(100% / 1 - 5px);
+}
+form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form .field input::placeholder{
+    color: #bfbfbf;
+}
+form .field input:focus{
+    border: 2px solid #393E46;
+}
+.form-login form i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;/*ทำให้ div click ไม่ได้*/
+    transform: translateY(-50%);
+}
+/* focus ไปที่ tag i ทุกตัว ให้มีสี  #0d6efd */
+form .field input:focus ~ i{
+    color: #393E46;
+} 
+/* class ขอบเขตปุ่ม */
+form .button-area{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+/* class ตกแต่งภายในปุ่ม */
+.button-area button{
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    color: #393E46;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #28DF99 ;
+    background-color: #bef5e0;
+    padding: 10px 20px;
+}
+
+.button-area button:hover{
+    background: #28DF99 ;
+    color: #FFFDF9;
+}
+
+/* ===== register ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width: 600px) {
+.wrapper header{
+    text-align: center;
+}
+form .dbl-field{
+    flex-direction: column;
+}
+.dbl-field .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+form .message textarea{
+    resize: none;
+}
+form .button-area{
+   flex-direction: column; 
+}
+.button-area button{
+    width: 100%;
+}
+.button-area span{
+    text-align: center;
+    margin-right: 20px 0;
+}
+}  */

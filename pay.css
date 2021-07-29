@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+}
+/* body{
+    min-height: 100vh;
+    display: flex;
+    padding: 0 10px;
+     justify-content: center;
+    align-items: center; 
+    background: #eeeeee;
+} */
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    padding: 0 10px;
+     justify-content: center;
+    align-items: center; 
+    background: #eeeeee;
+}
+/* scale form */
+.form-payment{
+    padding: 10px;
+    width: 80%;
+    height: auto; 
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+/* header form */
+
+.summary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #eeeeee;
+}
+.bank{
+    /* border: 1px solid #000000; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid #eeeeee;
+}
+.bank-text{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #eeeeee;
+}
+.title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+
+label {
+    background-color: #28DF99;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  .button-upload{
+     
+    position: absolute;
+    left: 18px;
+    top: 40%;
+transform: translateY(-50%);
+    
+  }
+/*  
+  .payment-record{
+      width: 900px;
+  } */
+/* .payment-record form{
+    width: 700px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+} */
+
+.form-payment .dbl-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.dbl-field .field{
+    height: 45px;
+    position: relative;/* ใส่คลุม absolute*/
+    width: calc(100% / 2 - 13px);
+    left: 2%;
+}
+.field input,
+.field select,
+.field select option{
+    height: 100%;
+    width: 90%;
+    outline: none;
+    padding: 0 20px 0 40px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* placeholder input */
+ .field input::placeholder{
+    color: #bfbfbf;
+}
+/* placeholder  select */
+select:required:invalid {
+    color: #bfbfbf;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: #393E46;
+  }
+
+
+  .form-payment i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;/*ทำให้ div click ไม่ได้*/
+    transform: translateY(-50%);
+}
+  
+.field input:focus,
+.field select:focus{
+    border: 2px solid #A4EBF3;
+}
+.field input:focus ~ i{
+    color: #A4EBF3;
+} 
+.button-payment{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button-payment button{
+    font-size: 18px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.button-payment button.pay{
+    background: #BEF5E0;
+    border: 1px solid #28DF99;
+    color:#393E46 ;
+}
+.button-payment button.pay:hover{
+    background: #28DF99;
+    color:#FFFDF9 ;
+}
+.button-payment button.after-pay{
+    background: #FDE7B4;
+    border: 1px solid #F9B208;
+    color:#393E46 ;
+}
+.button-payment button.after-pay:hover{
+    background: #F9B208;
+    color:#FFFDF9 ;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.container{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.cart{
+    width: 720px;
+    background: #eeeeee;
+    border-radius: 5px;
+   
+}
+.close-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.cart header{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid #bfbfbf;
+}
+.product{
+    display: flex;
+  
+    justify-content: space-between;
+    background-color: sandybrown;
+   border-bottom: 1px solid #000000;
+  
+}
+.title-item,
+.item{
+    flex-basis:5%;
+}
+
+.title-image,
+.image{
+    flex-basis:30%;
+}
+.title-product,
+.detail{
+    flex-basis:30%;
+}
+.title-amount,
+.amount{
+    flex-basis:10%;
+}
+.title-price,
+.price{
+    flex-basis:15%;
+}
+.title-button-del,
+.button-del{
+    flex-basis:10%;
+}
+.image,.item, .detail, .amount, .price, .button-del{
+    margin: 10px 10px 20px 0px;   
+}
+
+.detail p{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.item p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount input{
+    width: 60px;
+    height: 30px;
+}
+.button-del button{
+    background-color: red;
+    color: #ffffff;
+    border: 1px solid red;
+}
+.summary{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px 0 0;
+}
+.button-decision{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
